@@ -1,4 +1,4 @@
-# vue-gouped-reveal
+# vue-grouped-reveal
  Scroll reveal with dynamic grouping feature
 
 
