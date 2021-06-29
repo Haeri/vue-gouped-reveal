@@ -1,0 +1,17 @@
+{
+  "name": "vue-gouped-reveal",
+  "version": "1.0.0",
+  "description": "Scroll reveal with dynamic grouping feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "scroll",
+    "reveal",
+    "grouping"
+  ],
+  "author": "Haeri",
+  "license": "MIT"
+}
