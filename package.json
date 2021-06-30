@@ -1,7 +1,7 @@
 {
   "name": "vue-grouped-reveal",
   "version": "1.0.2",
-  "description": "Scroll reveal Vue plugin with a dynamic grouping feature",
+  "description": "Scroll reveal plugin for Vue.js with a dynamic grouping feature",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/Haeri/vue-grouped-reveal.git"
   },
-  "homepage": "https://haeri.github.io/vue-grouped-reveal/docs",
+  "homepage": "https://haeri.github.io/vue-grouped-reveal",
   "keywords": [
     "vue",
     "scroll",
