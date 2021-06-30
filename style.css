@@ -1,5 +1,5 @@
 .grouped-reveal{
-    transition: 0.4s;
+    transition-duration: 0.5s;
 }
 .grouped-reveal.unrevealed{
     opacity: 0;

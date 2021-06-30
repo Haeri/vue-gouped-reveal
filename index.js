@@ -48,11 +48,13 @@ const VueGroupedReveal = {
         el.classList.remove('revealed');
         el.classList.add('unrevealed');
 
+        
         if (inviewTest.above) {
           el.classList.add('above');
-        } else if (inviewTest.below) {
+        } else {
           el.classList.add('below');
         }
+        
       }
     };
 
@@ -99,7 +101,14 @@ const VueGroupedReveal = {
       inserted(el, binding) {
         el.classList.add('grouped-reveal');
         el.classList.add('unrevealed');
-        el.classList.add('below');
+        
+        const inviewTest = inYViewport(el, options.paddingTop, options.paddingBottom)
+        if (inviewTest.above) {
+          el.classList.add('above');
+        } else {
+          el.classList.add('below');
+        }
+        
         allElements.push({
           el,
           binding,
