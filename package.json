@@ -1,7 +1,7 @@
 {
   "name": "vue-grouped-reveal",
-  "version": "1.0.1",
-  "description": "Scroll reveal with dynamic grouping feature",
+  "version": "1.0.2",
+  "description": "Scroll reveal Vue plugin with a dynamic grouping feature",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

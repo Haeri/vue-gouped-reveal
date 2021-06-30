@@ -32,7 +32,7 @@ const VueGroupedReveal = {
       const inviewTest = inYViewport(el, options.paddingTop, options.paddingBottom);
       const groupID = binding.value && binding.value.group ? binding.value.group : uid();
 
-      if (!el.classList.contains('reveal-transition') && !el.classList.contains('revealed') && !(elementToReveal[groupID] && elementToReveal[groupID].includes(el)) && inviewTest.inview) {
+      if (!el._revealTransition && !el.classList.contains('revealed') && !(elementToReveal[groupID] && elementToReveal[groupID].includes(el)) && inviewTest.inview) {
         if (elementToReveal[groupID] === undefined) {
           elementToReveal[groupID] = [];
         }
@@ -43,9 +43,7 @@ const VueGroupedReveal = {
           allElements = allElements.filter((it) => !it.el.isSameNode(el));
         }
 
-        el.classList.add('reveal-transition');
-        el.classList.remove('above');
-        el.classList.remove('below');
+        el._revealTransition = true;
       } else if (el.classList.contains('revealed') && !inviewTest.inview) {
         el.classList.remove('revealed');
         el.classList.add('unrevealed');
@@ -84,8 +82,10 @@ const VueGroupedReveal = {
             values.forEach((i, index) => {
               setTimeout(() => {
                 i.classList.add('revealed');
+                i.classList.remove('above');
+                i.classList.remove('below');
                 i.classList.remove('unrevealed');
-                i.classList.remove('reveal-transition');
+                i._revealTransition = false;
               }, index * options.interval);
             });
           });

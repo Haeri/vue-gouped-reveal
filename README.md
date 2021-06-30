@@ -1,5 +1,7 @@
 # vue-grouped-reveal
-Scroll reveal with dynamic grouping feature
+Scroll reveal Vue plugin with a dynamic grouping feature.
+
+All elements from the same group will be automatically revealed sequentially. The sequencing is dynamically generated and therefore allows for different breakpoint configurations.
 
 ## Example
 [Demo Page](https://haeri.github.io/vue-grouped-reveal/docs)
