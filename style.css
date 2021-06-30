@@ -1,0 +1,16 @@
+.grouped-reveal{
+    transition: 0.4s;
+}
+.grouped-reveal.unrevealed{
+    opacity: 0;
+}
+.grouped-reveal.unrevealed.above{
+    transform: translateY(-40px);
+}
+.grouped-reveal.unrevealed.below{
+    transform: translateY(40px);
+}
+.grouped-reveal.revealed{
+    opacity: 1;
+    transform: translateY(0px);
+}
