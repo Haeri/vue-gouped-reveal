@@ -1,6 +1,6 @@
 {
   "name": "vue-grouped-reveal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scroll reveal plugin for Vue.js with a dynamic grouping feature",
   "main": "index.js",
   "scripts": {
