@@ -1,11 +1,6 @@
 "use strict"
 
-Object.defineProperty(exports, '__esModule', {
-  value: true,
-});
-exports.default = void 0;
-
-const _default = {
+const VueGroupedReveal = {
   install(Vue, opts) {
     let elementToReveal = {};
     let allElements = [];
@@ -122,4 +117,12 @@ const _default = {
   },
 
 };
-exports.default = _default;
+
+
+
+if (typeof exports === 'object' && typeof module !== 'undefined') {  
+  Object.defineProperty(exports, '__esModule', {
+    value: true,
+  });
+  exports.default = VueGroupedReveal;
+}

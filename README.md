@@ -1,6 +1,9 @@
 # vue-grouped-reveal
 Scroll reveal with dynamic grouping feature
 
+## Example
+[Demo Page](https://haeri.github.io/vue-grouped-reveal/docs)
+
 
 ## Install
 
@@ -12,6 +15,9 @@ npm i vue vue-grouped-reveal --save
 ```js
 import Vue from 'vue';
 import groupedReveal from 'vue-grouped-reveal';
+
+// optional
+import 'vue-grouped-reveal/style.css';
 
 Vue.use(groupedReveal);
 ```
