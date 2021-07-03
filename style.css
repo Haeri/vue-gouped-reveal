@@ -1,7 +1,9 @@
 .grouped-reveal{
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 .grouped-reveal.unrevealed{
+    transition-duration: 0s;
     opacity: 0;
 }
 .grouped-reveal.unrevealed.above{
