@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Haeri/vue-grouped-reveal@main/style.css">
+    <!--link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Haeri/vue-grouped-reveal@main/style.css"-->
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <style>
         body {
             margin: 1em;
@@ -127,7 +128,7 @@
             </div>
         </header>
         <div class="gallery">
-            <a class="gallery-item" href="https://unsplash.com" v-for="i in 100" :index="i" :key="'item-' + i" v-grouped-reveal="{group: 'gallery'}">
+            <a class="gallery-item" href="https://unsplash.com" v-for="i in 20" :index="i" :key="'item-' + i" v-grouped-reveal="{group: 'gallery'}">
                 <img :src="'https://source.unsplash.com/random/' + i">                
             </a>
         </div>
@@ -136,7 +137,8 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/Haeri/vue-grouped-reveal@main/index.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/gh/Haeri/vue-grouped-reveal@main/index.js"></script-->
+    <script src="../index.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

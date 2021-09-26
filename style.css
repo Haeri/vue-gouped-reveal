@@ -1,16 +1,16 @@
 .grouped-reveal{
-    transition-duration: 0.3s;
+    
     transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 .grouped-reveal.unrevealed{
-    transition-duration: 0s;
+    /*transition-duration: 0s;*/
     opacity: 0;
 }
 .grouped-reveal.unrevealed.above{
-    transform: translateY(-40px);
+    /*transform: translateY(-40px);*/
 }
 .grouped-reveal.unrevealed.below{
-    transform: translateY(40px);
+    /*transform: translateY(40px);*/
 }
 .grouped-reveal.revealed{
     opacity: 1;
